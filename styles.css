@@ -6,3 +6,47 @@
   border:0;
   font-family: 'Rubik Moonrocks', cursive;
   }
+
+  header {
+    display: flex;
+    background-image: linear-gradient( to bottom, #143156, #38963a, #b8a548, #ef8120 );
+    position: fixed;
+    width: 100%;
+    opacity: 90%;
+    
+  }
+  
+  nav {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  nav div.header-menu {
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+    border-image: linear-gradient( to bottom, #143156, #38963a, #b8a548, #ef8120 );
+    transition: 0.8s;
+    border-radius: 10px;
+  }
+  
+  nav div.header-menu:hover {
+    width: 150%;
+    background-image: linear-gradient( to bottom, #143156, #38963a,#ef8120 );
+    transition: 0.8s;
+    cursor: pointer;
+  } 
+  
+  nav div p {
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    color: #fff;
+  }
+
+  section img.img-home {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
