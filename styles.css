@@ -4,12 +4,12 @@
   vertical-align:baseline;
   list-style:none;
   border:0;
-  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Rubik Moonrocks', sans-serif;
   }
 
   header {
     display: flex;
-    background-image: linear-gradient( to bottom, #143156, #38963a, #b8a548, #ef8120 );
+    background-color: #000;
     position: fixed;
     width: 100%;
     opacity: 90%;
@@ -23,30 +23,35 @@
     justify-content: space-around;
   }
   
-  nav div.header-menu {
+  nav a {
     width: 100%;
     margin: 5px;
     padding: 2px;
-    border-image: linear-gradient( to bottom, #143156, #38963a, #b8a548, #ef8120 );
     transition: 0.8s;
+    text-align: center;
     border-radius: 10px;
   }
   
-  nav div.header-menu:hover {
+  nav a:hover {
     width: 150%;
     background-image: linear-gradient( to bottom, #143156, #38963a,#ef8120 );
     transition: 0.8s;
     cursor: pointer;
   } 
   
-  nav div p {
-    text-align: center;
-    text-shadow: 0 0 5px black;
+  nav a{
+    text-decoration: none;
+    text-shadow: 0 0 5px #ef8120;
     color: #fff;
   }
 
-  section img.img-home {
-    padding-top: 30px;
-    width: 100%;
-    height: 100%;
-  }
+section#home {
+  width: 100%;
+  height: 600px;
+}
+
+section img#img-home {
+  width: 100%;
+  height: 100%;
+  border: thin solid;
+}
