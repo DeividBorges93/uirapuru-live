@@ -4,22 +4,27 @@
   vertical-align:baseline;
   list-style:none;
   border:0;
-  }
+  /* adicionar */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
 
-  header {
-    display: flex;
-    background-color: #000;
-    position: fixed;
-    width: 100vw;
-    opacity: 90%;
-  }
+header {
+  display: flex;
+  background-color: #000;
+  position: fixed;
+  width: 100vw;
+  opacity: 90%;
+  z-index: 999;
+}
   
-  nav {
-    display: flex;
-    padding: 5px;
-    width: 100vw;
-    justify-content: space-around;
-  }
+nav {
+  display: flex;
+  padding: 5px;
+  width: 100vw;
+  justify-content: space-around;
+}
   
   nav a {
     width: 100vw;
@@ -44,16 +49,60 @@
     color: #fff;
   }
 
-section#home {
-  display: block;
+#home, #about, #register, #tracks, #contact {
   width: 100vw;
-  height: 100vh;
+  /* com isso vc fala que a largura é 100vw(considrando tota a tela)*/
+  max-width: 100%;
+  /* com isso você fala que se tiver barra de scroll vertical a largura é 100% */
+  display: block;
+  overflow: hidden;
+  /* com isso qualquer coisa que estiver dentro destes ids e forem maiores que ele nao estouram o conteiner */
 }
 
-section img#img-home {
-  width: 100vw;
+#home {
+  /* display: block;
+  width: 100vw; */
   height: 100vh;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(80deg, #ef8120, #38963a, #143156);
+  z-index: 1;
+  position: absolute;
+  mix-blend-mode: color;
+  opacity: 0.3;
+}
+
+/* section img */
+#img-home {
+  /* width: 100vw;
+  height: 100vh; */
+  /* filter: grayscale(1); */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border: thin solid;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.conteiner_titulo {
+  position: absolute;
+  z-index: 2;
+  width: 50vw;
+  height: 50vh;
+  border: dashed 1px rgb(255, 255, 255);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div#paragraphs {
