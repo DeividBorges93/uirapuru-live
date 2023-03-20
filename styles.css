@@ -189,6 +189,8 @@ div#paragraphs {
 }
 
 footer {
+  display: flex;
+
   background-color: #38963a;
   border-top: 2px solid black;
 }
@@ -206,4 +208,32 @@ footer {
 
 .email {
   font-size: large;
+}
+
+#back-to-top {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+  color: red;
+  z-index: 0;
+}
+
+@media(max-width: 600px) {
+  section img#img-home {
+    padding-top: 30px;
+  }
+
+  .slider {
+    height: 400px;
+  }
+
+  .navigation-auto {
+    display: none;
+  }
+
+  .manual-navigation {
+    display: none;
+  }
 }
