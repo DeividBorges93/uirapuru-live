@@ -20,19 +20,19 @@
     display: flex;
     background-color: #000;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     opacity: 90%;
   }
-  
+
   nav {
     display: flex;
     padding: 5px;
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
   }
   
   nav a {
-    width: 100vw;
+    width: 100%;
     margin: 5px;
     padding: 2px;
     transition: 0.8s;
@@ -41,7 +41,7 @@
   }
   
   nav a:hover {
-    width: 110vw;
+    width: 105%;
     background-image: linear-gradient( to bottom, #143156, #38963a,#ef8120 );
     transition: 0.8s;
     cursor: pointer;
@@ -56,8 +56,8 @@
 
 section#home {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 section img#img-home {
@@ -70,14 +70,15 @@ div#paragraphs {
   padding-top: 50px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-bottom: 20px;
   text-align: center;
   background-image: linear-gradient(80deg, #ef8120, #38963a, #143156);
   font-family: sans-serif;
   text-size-adjust: calc(10);
   text-shadow: 0 0 5px #512a09;
   color: #fff;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .slider {
@@ -116,7 +117,7 @@ div#paragraphs {
 }
 
 .manual-btn {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -148,7 +149,7 @@ div#paragraphs {
 }
 
 .navigation-auto div {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
