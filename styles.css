@@ -236,4 +236,8 @@ footer {
   .manual-navigation {
     display: none;
   }
+
+  .logo {
+    width: 25px;
+  }
 }
