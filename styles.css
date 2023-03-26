@@ -221,10 +221,6 @@ footer {
 }
 
 @media(max-width: 600px) {
-  section img#img-home {
-    padding-top: 30px;
-  }
-
   .slider {
     height: 400px;
   }
@@ -239,5 +235,9 @@ footer {
 
   .logo {
     width: 25px;
+  }
+
+  header {
+    display: none;
   }
 }
